@@ -36,6 +36,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox4 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -111,13 +114,52 @@
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Items.AddRange(new object[] {
+            "Пицца \"Пепперони\""});
             this.listBox1.Location = new System.Drawing.Point(100, 186);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(550, 94);
+            this.listBox1.Size = new System.Drawing.Size(681, 24);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // listBox2
+            // 
+            this.listBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Items.AddRange(new object[] {
+            "Пицца \"Сырная\""});
+            this.listBox2.Location = new System.Drawing.Point(100, 216);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(681, 24);
+            this.listBox2.TabIndex = 8;
+            // 
+            // listBox3
+            // 
+            this.listBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 20;
+            this.listBox3.Items.AddRange(new object[] {
+            "Пицца \"Фирменная\""});
+            this.listBox3.Location = new System.Drawing.Point(100, 246);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(681, 24);
+            this.listBox3.TabIndex = 9;
+            // 
+            // listBox4
+            // 
+            this.listBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.ItemHeight = 20;
+            this.listBox4.Items.AddRange(new object[] {
+            "Медовик"});
+            this.listBox4.Location = new System.Drawing.Point(100, 276);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(681, 24);
+            this.listBox4.TabIndex = 10;
             // 
             // Cashier
             // 
@@ -125,6 +167,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(901, 519);
+            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -151,5 +196,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox4;
     }
 }
